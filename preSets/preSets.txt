@@ -1,0 +1,11 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--Pre-sets-->
+    <link rel="stylesheet" href="../preSets/pre_sets.css" />
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+</head>

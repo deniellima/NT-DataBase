@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Contraste</title>
+
+    <!--Pre-sets-->
+    <link rel="stylesheet" href="../preSets/preSets.css" />
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="colorContrast.css" />
+</head>
+
+<body>
+
+    <button class="back" onclick="history.back()">
+        <i class="iconoir-arrow-left" id="icon"></i>
+    </button>
+
+    <div class="container">
+
+        <h4>Verificar contraste</h4>
+
+        <div class="input-colors">
+            <div class="color-container">
+                <label for="text-color">Cor do texto</label>
+                <input type="color" id="text-color" value="#000000" />
+            </div>
+            <div class="color-container">
+                <label for="bg-color">Cor do fundo</label>
+                <input type="color" id="bg-color" value="#3277f6" />
+            </div>
+        </div>
+        <div class="result">
+            <div id="preview">
+                Esse é um texto de teste para verificar o contraste!
+            </div>
+            <h1 id="contrast">1</h1>
+            <p id="rating">Demo Text</p>
+        </div>
+    </div>
+
+    <script src="color-contrast.js"></script>
+</body>
+
+</html>

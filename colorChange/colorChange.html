@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar cores</title>
+
+    <!--Pre-sets-->
+    <link rel="stylesheet" href="../preSets/preSets.css" />
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="colorChange.css" />
+</head>
+
+<body>
+
+    <button class="back" onclick="history.back()">
+        <i class="iconoir-arrow-left" id="icon"></i>
+    </button>
+
+    <div class="container">
+
+        <h4>Gerar cor</h4>
+
+        <button onclick="changeColor()">Gerar cor</button>
+        <input id="hex-val-ref" />
+        <div id="error" class="hide"></div>
+
+        <button id="pick-color" onclick="copy('hex-val-ref')">
+            <i class="iconoir-copy" id="icon"></i>Copiar cor
+        </button>
+
+        <div id="custom-alert">Código copiado!</div>
+    </div>
+
+    <script src="color-change.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+
+    <!--Pre-sets-->
+    <link rel="stylesheet" href="../preSets/preSets.css" />
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav bd-grid">
+
+            <h4>Cores</h4>
+
+            <div class="menu" id="menu">
+                <a href="#home" class="nav_link">Inicio</a>
+                <a href="#about" class="nav_link">Sobre</a>
+                <a href="../login/login.php" class="nav_link">Login</a>
+
+                <button onclick="window.location.href='../register/register.php'">Cadastre-se</button>
+            </div> 
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="action">
+            <h4>Aqui você encontra <br> informações sobre cores!</h4>
+            <button class="button_home" onclick="window.location.href='../register/register.php'">Cadastre-se</button>
+        </div>
+
+        <img src="circle.svg" />
+    </section>
+
+    <section class="home" id="home">
+        <img src="circle.svg" />
+
+        <div class="action">
+            <h4>Cadastres-se para ter acesso <br> a ferramenta de cores</h4>
+            <button class="button_home" onclick="window.location.href='../register/register.php'">Cadastre-se</button>
+        </div>
+    </section>
+
+    <section class="cards" id="about">
+        <div class="card">
+            <i class="iconoir-palette" id="icon"></i>
+            <h5>Pisicologia das cores</h5>
+            <span><strong>- Impacto Emocional:</strong> A cores podem evocar emoções distintas; <br>
+                <strong>- Cores na Publicidade:</strong> Marcas usam cores para influenciar o comportamento do
+                consumidor; <br>
+                <strong>- Percepção Cultural:</strong> O significado das cores pode variar de acordo com a cultura e a
+                sociedade; <br>
+                <strong>- Cores na Terapia:</strong> Como terapeutas usam as cores para tratar certas condições de saúde
+                mental; <br>
+                <strong>- Design de Interiores:</strong> As cores podem afetar o humor e a produtividade e o bem-estar
+                dependendo do ambientes.</span>
+        </div>
+        <div class="card">
+            <i class="iconoir-accessibility" id="icon"></i>
+            <h5>Acessibilidade</h5>
+            <span><strong>- Contraste de Cores:</strong> A importância de escolher cores com alto contraste para
+                garantir que o conteúdo seja legível por pessoas com deficiências visuais; <br>
+                <strong>- Ferramentas de Teste:</strong> Usar ferramentas que ajuda a verificar a acessibilidade das
+                cores em seus projetos; <br>
+                <strong>- Sensibilidade à Luz:</strong> Escolher cores que sejam confortáveis para pessoas com
+                sensibilidade à luz ou fotofobia. </span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="text_footer">Por Daniel Lima</p>
+    </footer>
+
+</body>
+
+</html>

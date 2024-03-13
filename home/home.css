@@ -1,0 +1,135 @@
+body {
+    background-color: #fff;
+}
+
+button {
+    width: fit-content;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+img {
+    display: flex;
+    height: 15em;
+    width: 15em;
+}
+
+h5 {
+    text-align: center;
+    margin: 1em;
+}
+
+p {
+    margin-top: 0.5em;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+}
+
+.button_home {
+    margin-top: 2em;
+}
+
+/*--------------------Header--------------------*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--background-color);
+    box-shadow: 0 0em 1em #e9e9e9;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5em;
+    gap: 1.5em;
+}
+
+.nav_link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.nav_link:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/*--------------------Home--------------------*/
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    height: min-content;
+    width: 80%;
+    margin-top: 8em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*--------------------Cards--------------------*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: start;
+    height: min-content;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card {
+    margin: 1em;
+    box-sizing: content-box;
+    text-align: left;
+    line-height: 1.5;
+    padding: 2em 2em;
+    width: 24em;
+    height: auto;
+    background-color: var(--background-color);
+    border-radius: 0.5em;
+    box-shadow: 0 0em 1em #e9e9e9;
+}
+
+#icon {
+    font-size: 4em;
+    color: var(--primary-color);
+}
+
+/*--------------------Footer--------------------*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.text_footer {
+    color: var(--background-color);
+}

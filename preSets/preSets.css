@@ -1,0 +1,212 @@
+/*--------------------Imports--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+/*--------------------Root--------------------*/
+
+:root {
+    /*Colors*/
+    --primary-color: #0074ef;
+    --hover-color: #0053ac;
+    --sucess-color: #37a137;
+    --error-color: #ff4747;
+    --background-color: #ffffff;
+    --background-hover-color: #f5f5f5;
+    --alternative-color: #888888;
+    --text-color: #333333;
+    --label-color: #666666;
+}
+
+/*--------------------Clean-sets--------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/*--------------------Container--------------------*/
+
+.container {
+    box-sizing: content-box;
+    width: 100%;
+    max-width: 24em;
+    padding: 2em 2em;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.5em;
+    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/*--------------------Text--------------------*/
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+label {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    margin-left: 0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--label-color);
+}
+
+span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--label-color);
+}
+
+/*--------------------Inputs--------------------*/
+
+input,
+[type="email"],
+[type="number"],
+[type="password"],
+[type="phone"],
+[type="text"] {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    height: 3em;
+    border: 1.8px solid var(--alternative-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+input:hover {
+    border-color: var(--hover-color);
+}
+
+/*--------------------Button--------------------*/
+
+button {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    height: 3em;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--background-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+/*--------------------Nav--------------------*/
+
+.back {
+    position: fixed;
+    justify-content: left;
+    align-content: start;
+    height: 3em;
+    width: 3em;
+    margin: 2em;
+    background-color: var(--background-color);
+}
+
+.back:hover {
+    background-color: var(--background-hover-color);
+}
+
+#icon {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+/*--------------------Footer--------------------*/
+
+.footer {
+    display: flex;
+    justify-content: left;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.link {
+    margin-left: 0.4em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.link:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}

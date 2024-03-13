@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores RGB</title>
+
+
+    <!--Pre-sets-->
+    <link rel="stylesheet" href="../preSets/preSets.css" />
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="colorRGB.css" />
+</head>
+
+<body>
+
+    <button class="back" onclick="history.back()">
+        <i class="iconoir-arrow-left" id="icon"></i>
+    </button>
+
+    <div class="container">
+
+        <h4>Cores RGB</h4>
+
+        <div class="wrapper">
+            <p>R</p>
+            <input type="range" min="0" max="255" value="0" id="red" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            <p>G</p>
+            <input type="range" min="0" max="255" value="0" id="green" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            <p>B</p>
+            <input type="range" min="0" max="255" value="0" id="blue" oninput="colors()">
+        </div>
+
+        <input id="hex-val-ref"/>
+        <div id="error" class="hide"></div>
+
+        <button id="pick-color" onclick="copy('hex-val-ref')">
+            <i class="iconoir-copy" id="icon"></i>Copiar cor
+        </button>
+
+        <div id="custom-alert">Código copiado!</div>
+    </div>
+
+    <script src="color-RGB.js"></script>
+
+    </div>
+</body>
+
+</html>
+
