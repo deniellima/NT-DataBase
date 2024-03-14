@@ -1,3 +1,17 @@
+<?php
+    session_start();
+
+    //Verify logged
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha'])== true)){
+        
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: ../login/login.php');
+    }else{
+        $logado= $_SESSION['email'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +38,7 @@
                 <a href="#about" class="nav_link">Sobre</a>
                 <a href="#tools" class="nav_link">Ferramentas</a>
 
-                <button onclick="window.location.href='../register/register.php'">Sair</button>
+                <button onclick="window.location.href='../sair.php'">Sair</button>
             </div> 
         </nav>
     </header>

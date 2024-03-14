@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
     <!--Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
     <!--CSS-->
-    <link rel="stylesheet" href="registe.css" />
+    <link rel="stylesheet" href="register.css" />
 </head>
 
 <body>
